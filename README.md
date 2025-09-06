@@ -9,7 +9,7 @@ Contiene los archivos de configuración de Neovim ubicados en `~/.config/nvim`. 
 
 1. Clonar el repositorio como un repositorio bare:
 ```bash
-git clone --bare git@github.com:TU_USUARIO/nvim-config.git $HOME/.cfg
+git clone --bare git@github.com:CsarrrX/dotfiles.git $HOME/.cfg
 ```
 2. Configurar el alias para manejar los dotfiles:
 ```bash
