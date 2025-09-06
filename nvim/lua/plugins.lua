@@ -75,6 +75,41 @@ require("lazy").setup({
       }),
     })
   end,
+},
+
+{
+    "nvim-telescope/telescope.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      local telescope = require("telescope")
+      local actions = require("telescope.actions")
+
+      telescope.setup{
+        defaults = {
+          mappings = {
+            i = {
+              ["<C-j>"] = actions.move_selection_next,
+              ["<C-k>"] = actions.move_selection_previous,
+              ["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
+            },
+          },
+          prompt_prefix = "🔍 ",
+          selection_caret = "➤ ",
+        },
+        pickers = {
+          find_files = { hidden = true },
+          live_grep = {},
+          buffers = { sort_lastused = true, ignore_current_buffer = true },
+        },
+      }
+
+      -- Mappings rápidos
+      local map = vim.keymap.set
+      map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { noremap = true, silent = true })
+      map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { noremap = true, silent = true })
+      map("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { noremap = true, silent = true })
+      map("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { noremap = true, silent = true })
+  end
 }
 
  
