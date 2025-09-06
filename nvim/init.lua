@@ -19,6 +19,9 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 
+-- No permitir wrap
+vim.o.wrap = false
+
 -- Cargar plugins
 require('plugins')
 
