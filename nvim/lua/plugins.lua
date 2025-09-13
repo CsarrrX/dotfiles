@@ -110,6 +110,18 @@ require("lazy").setup({
       map("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { noremap = true, silent = true })
       map("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { noremap = true, silent = true })
   end
+},
+
+{
+  "echasnovski/mini.files",
+  version = false,
+  config = function()
+    require("mini.files").setup()
+    -- Abrir file explorer en el directorio del archivo actual
+    vim.keymap.set("n", "<leader>e", function()
+      require("mini.files").open(vim.api.nvim_buf_get_name(0))
+    end, { desc = "Abrir mini.files" })
+  end,
 }
 
  
