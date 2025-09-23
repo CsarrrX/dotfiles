@@ -1,15 +1,18 @@
-# Configuración de Neovim
+# Configuración de WSL
 
-Repositorio para versionar y reproducir la configuración de Neovim en cualquier máquina.
+Repositorio para versionar y reproducir la configuración de wsl en cualquier máquina.
 
 ## Descripción
-Contiene los archivos de configuración de Neovim ubicados en `~/.config/nvim`. Permite sincronizar y mantener la misma configuración en distintas máquinas usando Git.
+Contiene los archivos de configuración de todo lo usado en WSL ubicados en `~/.config`. Permite sincronizar y mantener la misma configuración en distintas máquinas usando Git.
 
 ## Instalación en una nueva máquina
 
-1. Clonar el repositorio como un repositorio a .config:
+1. Instalar todo (en fedora): 
 ```bash
-git clone git@github.com:CsarrrX/dotfiles.git ~/.config
+sudo dnf install clear git gcc python3 nvim wget curl fastfetch zsh
 ```
+2. Instalar oh my zsh y powerlevel10k
+3. Instalar miniconda
+4. Clonar el repo
 
 
