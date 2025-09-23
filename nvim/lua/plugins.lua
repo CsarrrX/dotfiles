@@ -5,6 +5,27 @@ require("lazy").setup({
   "nvim-lua/plenary.nvim",
 
     {
+    "williamboman/mason.nvim",
+    opts = {},
+  },
+
+  -- mason-lspconfig para integrar Mason con nvim-lspconfig
+  {
+    "williamboman/mason-lspconfig.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    dependencies = {
+      "williamboman/mason.nvim",
+      "neovim/nvim-lspconfig",
+    },
+    opts = {
+      -- Instala automáticamente estos servidores
+      ensure_installed = {
+        "pyright",
+      },
+    },
+  },
+
+    {
     "neovim/nvim-lspconfig",
     config = function()
       local lspconfig = require("lspconfig")
