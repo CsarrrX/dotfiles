@@ -11,8 +11,9 @@ Contiene los archivos de configuración de todo lo usado en WSL ubicados en `~/.
 ```bash
 sudo dnf install clear git gcc python3 nvim wget curl fastfetch zsh
 ```
-2. Instalar oh my zsh y powerlevel10k
-3. Instalar miniconda
-4. Clonar el repo
+2. Instalar oh my zsh, powerlevel10k y zsh-autocompletion
+3. Instalar una nerd font y customizar la terminal
+4. Instalar miniconda
+5. Clonar el repo
 
 
