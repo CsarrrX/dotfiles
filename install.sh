@@ -2,13 +2,12 @@
 set -e
 
 # ================================
-# Dotfiles Bootstrap Script
+# Dotfiles Bootstrap Script (Fedora)
 # ================================
 
 # --- Paquetes base ---
 echo "[*] Instalando paquetes base..."
-sudo apt update
-sudo apt install -y git curl wget gcc make python3 python3-pip zsh fastfetch
+sudo dnf install -y git curl wget gcc make python3 python3-pip zsh fastfetch
 
 # --- Git config global ---
 echo "[*] Configurando Git..."
