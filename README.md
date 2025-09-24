@@ -24,13 +24,7 @@ Incluye un script `install.sh` que automatiza la instalación y enlaza las confi
    
 ## 📁 Organización:
 
-dotfiles/ <br>
-├── .zshrc                   # Configuración de Zsh + Oh My Zsh <br>
-├── .p10k.zsh                # Tema Powerlevel10k <br>
-├── fastfetch/               # Configuración de fastfetch <br>
-│   └── config.jsonc <br>
-├── install.sh               # Script de instalación <br>
-└── README.md                # Este archivo <br>
+Se hacen symlinks de este repo en las respectivas carpetas, para modificar algo o añadir algo se tiene que añadir el file y el symlink hacia donde va
 
 ## 👾 Actualización:
    ```bash
