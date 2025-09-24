@@ -43,7 +43,7 @@ echo "[*] Creando symlinks..."
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.p10k.zsh ~/.p10k.zsh
 mkdir -p ~/.config/fastfetch
-ln -sf ~/dotfiles/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
+ln -sf ~/dotfiles/.config/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
 
 # --- Github ssh key ---
 if [ ! -f "$HOME/.ssh/id_ed25519" ]; then
@@ -52,7 +52,6 @@ fi
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 echo "[!] USAR cat ~/.ssh/id_ed25519.pub"
-
 
 echo "[✔] Instalación completada. Ejecuta: exec zsh"
 
