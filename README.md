@@ -25,12 +25,12 @@ Incluye un script `install.sh` que automatiza la instalación y enlaza las confi
 ## 📁 Organización:
 
 dotfiles/
-├── .zshrc              # Configuración de Zsh + Oh My Zsh
-├── .p10k.zsh           # Tema Powerlevel10k
-├── fastfetch/          # Configuración de fastfetch
-│   └── config.jsonc
-├── install.sh          # Script de instalación
-└── README.md           # Este archivo
+├── .zshrc <br>              # Configuración de Zsh + Oh My Zsh
+├── .p10k.zsh <br>           # Tema Powerlevel10k
+├── fastfetch/ <br>          # Configuración de fastfetch
+│   └── config.jsonc <br>
+├── install.sh <br>          # Script de instalación
+└── README.md <br>           # Este archivo
 
 ## 👾 Actualización:
    ```bash
