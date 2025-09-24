@@ -9,7 +9,7 @@ Incluye un script `install.sh` que automatiza la instalación y enlaza las confi
 
 1. Clona este repositorio en tu home:
    ```bash
-   git clone git@github.com:csarrrx/dotfiles.git ~/dotfiles
+   git clone https://github.com/CsarrrX/dotfiles.git ~/dotfiles
    cd ~/dotfiles
    ```
 2. Da permisos de ejecución al install.sh:
